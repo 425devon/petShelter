@@ -1,0 +1,19 @@
+label, input{
+    display: block;
+    text-align: left;
+    margin: 2%;
+}
+form{
+    border: 1px solid black;
+    width: 25%;
+    margin-left: 2%;
+    padding: 1em;
+}
+
+.b{
+    display: inline;
+}
+
+input{
+    border-radius: 5px; 
+}

@@ -1,0 +1,31 @@
+<div>
+  <h3>Know of a pet needing a home?</h3>
+
+  <form (submit)="onSubmit()">
+     <h3 style="color: red;"> {{curErr}} </h3>
+      <label>Name:</label>
+      <input type="text" name="newPet.name"
+       [(ngModel)]="newPet.name" />
+    
+      <label>Type:</label>
+      <input type="text" name="newPet.type" 
+      [(ngModel)]="newPet.type" />
+    
+      <label>Description:</label>
+      <input type="text" name="newPet.desc" [(ngModel)]="newPet.desc" />
+      <label>Skills (optional):</label>
+
+      <h5>Skill 1</h5>
+      <input type="text" name="skillset.s1" 
+      [(ngModel)]="skillset.s1" />
+      <h5>Skill 2</h5>
+      <input type="text" name="skillset.s2" 
+      [(ngModel)]="skillset.s2" />
+      <h5>Skill 3</h5>
+      <input type="text" name="skillset.s3" 
+      [(ngModel)]="skillset.s3" />
+
+      <input class="b" type="submit" value="Add pet">
+      <input class="b" type="button" (click)="cancel()" value="Cancel">
+  </form>
+</div>

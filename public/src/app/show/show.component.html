@@ -1,0 +1,12 @@
+<div>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <h2>Details about {{pet.name}}</h2>
+
+  <h3>Pet type: {{pet.type}}</h3>
+  <h3>Description: {{pet.desc}}</h3>
+  <h3>Skills: {{pet.skills[0]}} <br> {{pet.skills[1]}} <br>{{pet.skills[2]}}</h3>
+  <h3>Likes:  {{ pet.likes }}</h3>
+  <button disabled="{{stat}}" (click)="upVote()">Like this pet</button>
+  <button (click)="delete()">Adopt this pet!</button>
+
+</div>

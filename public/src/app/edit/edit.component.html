@@ -1,0 +1,25 @@
+<div>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <h3>Edit this pet</h3>
+  <div>
+    <form (submit)="editPet()">
+      <h2 style="color: red;"> {{curErr}} </h2>
+      <label>Name:</label>
+      <input type="text" name="newPet.name" [(ngModel)]="newPet.name" />
+      <label>Type:</label>
+      <input type="text" name="newPet.type" [(ngModel)]="newPet.type" />
+      <label>Description:</label>
+      <input type="text" name="newPet.desc" [(ngModel)]="newPet.desc" />
+      <label>Skills(optional):</label>
+      <h5>Skill 1</h5>
+      <input type="text" name="newPet.skills" [(ngModel)]="newPet.skills[0]" />
+      <h5>Skill 2</h5>
+      <input type="text" name="newPet.skills[1]" [(ngModel)]="newPet.skills[1]" />
+      <h5>Skill 3</h5>
+      <input type="text" name="newPet.skills[2]" [(ngModel)]="newPet.skills[2]" /> 
+      
+      <input class="b" type="submit" value="Edit pet">
+      <input class="b" type="button" (click)="goHome()" value="Cancel">
+    </form>
+  </div>
+</div>
